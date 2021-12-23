@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.left-menu{
+    padding-left: 80px;
+}
+
+header .nav-item .active {
+    color: #BB21AB;
+    border-bottom: 2px solid #BB21AB;
+}
+header .nav-item .nav-link{
+    color:black;
+    font-weight: 600;
+}
+
+
+
+header .nav-item .btn-demo{
+    padding: 10px 45px;
+    background-color: #BB21AB;
+    color:white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.swf{
+    padding-top: 90px;
+}
+
+.swf .content p{
+    color: #555555;
+}
+
+.choose{
+    list-style: none;
+}
+
+.solutions {
+    padding-top: 40px;
+}
+
+.solutions .btn-chose{
+    color: #BB21AB;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #BB21AB;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.solutions .btn-chose2{
+    color: white;
+    background-color:#BB21AB;
+    border-radius: 10px;
+    padding:5px 10px;
+    border: none;
+}
+
+.featured{
+    padding-top: 100px;
+    text-align: center;
+}
+.featured p{
+   padding-bottom: 10px;
+   color:#555555;
+}
+
+.chart {
+    padding-top: 30px;
+    background-color: #FFF7FE;
+    width: 100%;
+}
+
+.chart p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.left-chart{
+    margin-left: 60px;
+}
+
+.left-chart img{
+    width: 480px;
+    height: 370px;
+    padding-bottom: 20px;
+}
+
+.left-chart span{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.do-more-with{
+    margin-top: -200px;
+}
+
+.domorewith{
+    margin-top: -800px;
+}
+.domorewith h1{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
+
+.domorewith .title{
+    text-align: center;
+    color:white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.domorewith .amount li{
+    list-style: none;
+}
+
+.btn-amount{
+    width:250px;
+    height:350px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color:#AE20AB;
+    color:white;
+    font-size: 24px;
+    font-weight:600;
+}
+
+.amount li p {
+    padding-top: 20px;
+    text-align: center;
+    color:white;
+}
+
+.form {
+    margin-top: -360px;
+    z-index: -1;
+}
+
+.register{
+    margin-top: -800px;
+}
+
+.register h1{
+    font-weight: 800;
+    text-align: center;
+}
+
+.register p{
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-regis{
+    padding-left: 80px;
+}
+
+.form-regis input{
+    padding-top: 40px;
+}
+
+
