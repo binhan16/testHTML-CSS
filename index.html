@@ -16,6 +16,7 @@
 
             <!-- Links -->
             <a href="#">
+                <!-- Làm sao e lấy đc svg này? -->
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="66" viewBox="0 0 156 66">
                     <defs>
                       <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 676 288">
@@ -27,6 +28,10 @@
             </a>
             <div class="right-menu">
                 <ul class="navbar-nav">
+                    <!-- Trên hình thể hiện như vậy nghĩa là 1 item có trạng thái .active
+                    1 item có trạng thái :hover, :focus
+                    k phải là 2 item active
+                    :hover, :focus thì mờ hơn -->
                     <li class="nav-item  p-2">
                       <a class="nav-link active" href="#">Our Software</a>
                     </li>
@@ -465,6 +470,12 @@
 
         <div class="featured">
             <p >Featured In</p>
+            <!-- Đây là 1 slider có 5 item, gồm 5 hình
+            Có 2 trường hợp xảy ra ở đây
+            1. các hình có cùng kích thước
+            2. các hình có kích thước khác nhau
+            
+            c hay dùng Slick để làm slider, e có thể thử dùng plugin này hoặc khác -->
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1086" height="104" viewBox="0 0 1086 104">
                         <defs>
@@ -505,7 +516,8 @@
              <br>
              <span>Get real-time ETA based on the drivers location while keeping your customers informed and dramatically reduces customer queries</span>
          </div> 
-         <div class="right-chart col-3">           
+         <div class="right-chart col-3">    
+           <!-- Đây cũng là 1 slider luôn, hover mỗi item bên phải sẽ đổi hình bên trái        -->
                  <svg xmlns="http://www.w3.org/2000/svg" width="478.791" height="413.367" viewBox="0 0 478.791 413.367">
                      <g id="Group_693" data-name="Group 693" transform="translate(-1114.209 -1387.226)">
                        <text id="Route_Planning_and_Route_Optimisation" data-name="Route Planning and Route Optimisation" transform="translate(1205 1401)" fill="#999" font-size="16" font-family="MaaxRoundedTrial-Bold, Maax Rounded Trial" font-weight="700" opacity="0.998"><tspan x="0" y="16">Route Planning and Route Optimisation</tspan></text>
@@ -616,6 +628,8 @@
       </section>
 
       <section class="do-more-with" >
+        <!-- Background này có thể dùng CSS
+        e search "css linear-gradient Background" để tìm code tương tự mà làm nha -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=100% height="1065" viewBox="0 0 1920.26 1065.778">
             <defs>
               <linearGradient id="linear-gradient" x1="0.938" y1="0.435" x2="0.101" y2="0.5" gradientUnits="objectBoundingBox">
@@ -633,14 +647,20 @@
             <div class="container ">
             <ul class="amount d-flex text-align-center">
                 <li class="p-5">
+                    <!-- Đây chỉ là hình tròn chứa text
+                    k xử lý sự kiện gì, nên k dùng <button> -->
                     <button class='btn-amount'>4 <br> out of 10</button>
                     <p>Top logistics providers <br> powered by Yojee <br> technolog</p>
                 </li>
                 <li class="p-5">
+                  <!-- Đây chỉ là hình tròn chứa text
+                  k xử lý sự kiện gì, nên k dùng <button> -->
                     <button class='btn-amount'>100+</button>
                     <p>Truck companies leveraging <br> the platform</p>
                 </li>
                 <li class="p-5">
+                  <!-- Đây chỉ là hình tròn chứa text
+                  k xử lý sự kiện gì, nên k dùng <button> -->
                     <button class='btn-amount'>4,000,000+</button>
                     <p>Deliveries Processed</p>
                 </li>

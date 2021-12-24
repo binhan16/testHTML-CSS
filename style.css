@@ -115,6 +115,11 @@ header .nav-item .btn-demo{
     margin-top: -200px;
 }
 
+ /* domorewith viết liền khó đọc, 
+ thay vì vậy e có thể làm theo BEM
+ BEM = Block__Element--Modifier 
+ 
+ Ex: .do-more-with__wrapper */
 .domorewith{
     margin-top: -800px;
 }
@@ -137,7 +142,7 @@ header .nav-item .btn-demo{
 
 .btn-amount{
     width:250px;
-    height:350px;
+    height:350px; /* width height nên bằng nhau vì đây là hình tròn */
     border-radius: 50%;
     border: 5px solid white;
     background-color:#AE20AB;
