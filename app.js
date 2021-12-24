@@ -82,3 +82,16 @@ form.addEventListener('submit', function(e){
 
     
 })
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y=document.getElementById("right-menu");
+  var z=document.getElementById("left-menu");
+  if (x.style.display === "block" ) {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block";
+  }
+}
