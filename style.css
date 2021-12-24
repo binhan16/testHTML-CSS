@@ -1,182 +1,265 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width:100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-header{
-    margin-top: 20px;
-    position: relative;
-    display: flex;
+header {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
 }
 
-.left-menu{
-    padding-left: 80px;
+.left-menu {
+  padding-left: 80px;
 }
 
 header .nav-item .active {
-    color: #BB21AB;
-    border-bottom: 2px solid #BB21AB;
+  color: #bb21ab;
+  border-bottom: 2px solid #bb21ab;
 }
-header .nav-item .nav-link{
-    color:black;
-    font-weight: 600;
-}
-
-
-
-header .nav-item .btn-demo{
-    padding: 10px 45px;
-    background-color: #BB21AB;
-    color:white;
-    font-weight: 600;
-    border-radius: 10px;
-    border: none;
+header .nav-item .nav-link {
+  color: black;
+  font-weight: 600;
 }
 
-.swf{
-    padding-top: 90px;
+header .nav-item .btn-demo {
+  padding: 10px 40px;
+  background-color: #bb21ab;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
 }
 
-.swf .content p{
-    color: #555555;
+header .right-menu .drop-1{
+  margin-left: 15%;
+}
+header .right-menu .drop-1 a:hover,
+header .right-menu .drop-2 a:hover{
+  text-decoration: none;
 }
 
-.choose{
-    list-style: none;
+header .right-menu .drop-1 i{
+ float: right;
+ margin-left: 20px;
+ cursor: pointer;
+}
+
+header .right-menu .drop-1 {
+  padding: 20px 60px 20px;
+  background:linear-gradient(120deg,#FFFFFF ,#F6EAF5)
+}
+
+header .right-menu .drop-2{
+  margin-left: 35%;
+}
+
+header .right-menu .drop-2 {
+  padding: 20px 60px 20px;
+  background:linear-gradient(120deg,#FFFFFF ,#F6EAF5)
+}
+
+@media only screen and (max-width: 600px) {
+  header .menu-toggle {
+    float: right;
+  }
+  header .logo{
+    width:3rem;
+    height:3rem;
+  }
+}
+
+.dropdown-menu li a{
+  font-weight: 600;
+  color: black;
+
+}
+
+.swf {
+  padding-top: 90px;
+}
+
+.swf .content p {
+  color: #555555;
+}
+
+.choose {
+  list-style: none;
 }
 
 .solutions {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
-.solutions .btn-chose{
-    color: #BB21AB;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid #BB21AB;
-    padding: 5px 10px;
-    font-size: 14px;
-    font-weight: 600;
+.solutions .btn-chose {
+  color: #bb21ab;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #bb21ab;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
 }
-.solutions .btn-chose2{
-    color: white;
-    background-color:#BB21AB;
-    border-radius: 10px;
-    padding:5px 10px;
-    border: none;
+.solutions .btn-chose2 {
+  color: white;
+  background-color: #bb21ab;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
 }
 
-.featured{
-    padding-top: 100px;
-    text-align: center;
+.featured {
+  padding-top: 100px;
+  text-align: center;
 }
-.featured p{
-   padding-bottom: 10px;
-   color:#555555;
+.featured p {
+  padding-bottom: 10px;
+  color: #555555;
 }
 
 .chart {
-    padding-top: 30px;
-    background-color: #FFF7FE;
-    width: 100%;
+  padding-top: 30px;
+  background-color: #fff7fe;
+  width: 100%;
 }
 
-.chart p{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 20px;
+.chart p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
-.left-chart{
-    margin-left: 60px;
+.left-chart {
+  margin-left: 60px;
 }
 
-.left-chart img{
-    width: 480px;
-    height: 370px;
-    padding-bottom: 20px;
+.left-chart img {
+  width: 480px;
+  height: 370px;
+  padding-bottom: 20px;
 }
 
-.left-chart span{
-    font-weight: 600;
-    font-size: 14px;
+.left-chart span {
+  font-weight: 600;
+  font-size: 14px;
 }
 
-
-.do-more-with{
-    margin-top: -200px;
+.do-more-with {
+  margin-top: -200px;
 }
 
-.domorewith{
-    margin-top: -800px;
+.domorewith {
+  margin-top: -800px;
 }
-.domorewith h1{
-    text-align: center;
-    color: white;
-    font-weight: 800;
-}
-
-.domorewith .title{
-    text-align: center;
-    color:white;
-    font-size: 13px;
-    font-weight: 400;
+.domorewith h1 {
+  text-align: center;
+  color: white;
+  font-weight: 800;
 }
 
-.domorewith .amount li{
-    list-style: none;
+.domorewith .title {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
 }
 
-.btn-amount{
-    width:250px;
-    height:350px;
-    border-radius: 50%;
-    border: 5px solid white;
-    background-color:#AE20AB;
-    color:white;
-    font-size: 24px;
-    font-weight:600;
+.domorewith .amount li {
+  list-style: none;
+}
+
+.btn-amount {
+  width: 250px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: #ae20ab;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .amount li p {
-    padding-top: 20px;
-    text-align: center;
-    color:white;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
 }
 
 .form {
-    margin-top: -360px;
-    z-index: -1;
+  margin-top: -360px;
+  z-index: -1;
 }
 
-.register{
-    margin-top: -800px;
+.register {
+  margin-top: -900px;
 }
 
-.register h1{
-    font-weight: 800;
-    text-align: center;
+.register h1 {
+  font-weight: 800;
+  text-align: center;
 }
 
-.register p{
-    font-weight: 600;
-    text-align: center;
+.register p {
+  font-weight: 600;
+  text-align: center;
 }
 
-.form-regis{
-    padding-left: 80px;
+.form-register input,
+select {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 3px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.form-regis input{
-    padding-top: 40px;
+.form-register input[type="submit"] {
+  width: 100%;
+  background-color: #bb21ab;
+  color: white;
+  font-weight: 600;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.form-register label {
+  font-weight: 600;
+}
 
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #333333;
+}
+
+footer h3,
+li {
+  color: white;
+}
+footer li {
+  padding-bottom: 10px;
+}
+
+.social {
+  background: linear-gradient(120deg, #2e3191, #bb21ab);
+}
+
+footer .social-icon {
+  padding-left: 100px;
+  line-height: 30px;
+}

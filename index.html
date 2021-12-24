@@ -14,8 +14,12 @@
       <header class="container">
         <nav class="navbar navbar-expand-sm ">
 
+          
+
+          
             <!-- Links -->
-            <a href="#">
+            <div class="col-12 col-sm-2">
+              <a class='logo' href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="66" viewBox="0 0 156 66">
                     <defs>
                       <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 676 288">
@@ -25,16 +29,95 @@
                     <rect id="Logo" width="156" height="66" fill="url(#pattern)"/>
                   </svg>     
             </a>
-            <div class="right-menu">
+            </div>
+
+            <!-- toggle -->
+          <!-- <div class="menu-toggle col-12">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.198" height="22.749" viewBox="0 0 32.198 22.749">
+                <g id="Group_397" data-name="Group 397" transform="translate(-388.25 -64.25)">
+                  <line id="Line_4" data-name="Line 4" x2="29.698" transform="translate(389.5 65.5)" fill="none" stroke="#292929" stroke-linecap="round" stroke-width="2.5"/>
+                  <line id="Line_5" data-name="Line 5" x2="29.698" transform="translate(389.5 75.676)" fill="none" stroke="#292929" stroke-linecap="round" stroke-width="2.5"/>
+                  <line id="Line_6" data-name="Line 6" x2="29.698" transform="translate(389.5 85.749)" fill="none" stroke="#292929" stroke-linecap="round" stroke-width="2.5"/>
+                </g>
+              </svg>
+            </a>     
+          </div> -->
+
+            <div class="right-menu col-sm-6">
                 <ul class="navbar-nav">
-                    <li class="nav-item  p-2">
-                      <a class="nav-link active" href="#">Our Software</a>
+                    <li class="nav-item drop-down  p-2">
+                      <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Our Source<span class="caret"></span></a>
+                      <ul class="dropdown-menu drop-1">
+                        <li><a href="#">Solving Challenges</a>
+                          <i><svg xmlns="http://www.w3.org/2000/svg" width="4.354" height="7.891" viewBox="0 0 4.354 7.891">
+                            <path id="Path_7814" data-name="Path 7814" d="M-19318.5-2875.767l3.145,3.492-3.145,2.987" transform="translate(19319.207 2876.473)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                          </svg></i>
+                        </li>
+                        <li><a href="#">Features</a>
+                          <i><svg xmlns="http://www.w3.org/2000/svg" width="4.354" height="7.891" viewBox="0 0 4.354 7.891">
+                            <path id="Path_7814" data-name="Path 7814" d="M-19318.5-2875.767l3.145,3.492-3.145,2.987" transform="translate(19319.207 2876.473)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                          </svg></i>
+                        </li>
+                        <li><a href="#">Pricing</a>
+                          <i><svg xmlns="http://www.w3.org/2000/svg" width="4.354" height="7.891" viewBox="0 0 4.354 7.891">
+                            <path id="Path_7814" data-name="Path 7814" d="M-19318.5-2875.767l3.145,3.492-3.145,2.987" transform="translate(19319.207 2876.473)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                          </svg></i>
+                        </li>
+                        <li><a href="#">API</a>
+                          <i><svg xmlns="http://www.w3.org/2000/svg" width="4.354" height="7.891" viewBox="0 0 4.354 7.891">
+                            <path id="Path_7814" data-name="Path 7814" d="M-19318.5-2875.767l3.145,3.492-3.145,2.987" transform="translate(19319.207 2876.473)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                          </svg></i>
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item p-2">
                       <a class="nav-link" href="#">Industry</a>
                     </li>
-                    <li class="nav-item  p-2">
-                      <a class="nav-link active" href="#">Resources</a>
+                    <li class="nav-item drop-down  p-2">
+                      
+                      <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
+                      <div class="d-flex">
+                        <!-- <p>VIEW ALL <svg xmlns="http://www.w3.org/2000/svg" width="4.354" height="7.891" viewBox="0 0 4.354 7.891">
+                          <path id="Path_7816" data-name="Path 7816" d="M-19318.5-2875.767l3.145,3.492-3.145,2.987" transform="translate(19319.207 2876.473)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                        </svg>
+                      </p> -->
+                        <!-- drop-left -->
+                        <div>
+                          <ul class="dropdown-menu drop-2">
+                            <li><a href="#">Order Management</a>
+                            </li>
+                            <li><a href="#">Delivery Route Planning</a>
+                            </li>
+                            <li><a href="#">Delivery Route Optimization</a>
+                            </li>
+                            <li><a href="#">Fleet Delivery Tracking</a>
+                            </li>
+                            <li><a href="#">Automated Customer Update</a>
+                            </li>
+                          </ul>
+                         </div>
+                         <!-- drop-right -->
+                         <div>
+                          <ul class="dropdown-menu ">
+                            <li><a href="#">Delivery Driver App</a>
+                            </li>
+                            <li><a href="#">Electronic Proof of Delivery</a>
+                            </li>
+                            <li><a href="#">Rating & Cost Calculations</a>
+                            </li>
+                            <li><a href="#">Partner Management</a>
+                            </li>
+                            <li><a href="#">Reporting and Insights</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     
+
+                      
+
+
                     </li>
                     <li class="nav-item p-2">
                       <a class="nav-link" href="#">About</a>
@@ -42,15 +125,15 @@
                   </ul>
             </div>
 
-            <div class="left-menu">
+            <div class="left-menu col-sm-4">
                 <ul class="navbar-nav ">
-                    <li class="nav-item  p-2">
+                    <li class="nav-item  ">
                       <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item  p-2">
+                    <li class="nav-item  ">
                       <a class="nav-link" href="#">Send SG</a>
                     </li>
-                    <li class="nav-item  p-2">
+                    <li class="nav-item  ">
                         <button class="btn-demo">DEMO</button>
                     </li>
                     
@@ -62,7 +145,7 @@
             <div class="content col-6">
                 <h1 class="font-weight-bold">See the world flow</h1>
                 <p class="font-weight-bold">Gain full visibility on your logistics operations, manage your partners and scale your business</p>
-                <div class="solutions ">
+                <div class="solutions col-12 col-sm-3">
                     <p>Chose your solutions:</p>
                     <ul class="choose d-flex ">
                         <li class="nav-item p-1 ">
@@ -78,7 +161,7 @@
                       </ul>
                 </div>
             </div>
-            <div class="image col-3">
+            <div class="image col-sm-3 col-12">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450.176" height="446.666" viewBox="0 0 450.176 446.666">
                     <defs>
                       <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
@@ -1110,38 +1193,145 @@
                     </g>
                   </svg>
               </div>
-              <div class="col-3">
-                  <form action="form-regis">
-                      <label>First Name</label>
-                      <input type="text">
-
-                      <label>Last Name</label>
-                      <input type="text">
-
-                      <label>Contact Number</label>
-                      <input type="text">
-
-                      <label>Company</label>
-                      <input type="text">
-
-                      <label>Email</label>
-                      <input type="email">
-
-                      <label>Country</label>
-                      
-                      <select name="cars" id="cars">
-                        <option value="australia">AUSTRALIA</option>
-                        <option value="english">ENGLISH</option>
-                        <option value="vietnamese">VIETNAMESE</option>
-                        <option value="russia">RUSSIA</option>
-                      </select>
-                  </form>
+              <div class="form-register">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <br>
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <br>
+                  <label for="cnumber">Contact Number</label>
+                  <input type="number" id="cnumber" name="contactnumber" placeholder="Your contact number..">
+              <br>
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company..">
+              <br>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your email..">
+              <br>
+                 
+                  <label for="country">Country</label>
+                  <br>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="BOOK A DEMO">
+                </form>
               </div>
+             
+                  
+              
           </div>
           </div>
       </section>
 
-      <footer>
+      <footer class="position-relative ">
+        <div class="container ">
+          <div class="row ">
+            <div class="image col-12 col-sm-3 mt-5 ">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="82" viewBox="0 0 197 82">
+                  <defs>
+                    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 512 213">
+                      <image width="512" height="213" xlink:href="data:image/png;base64,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"/>
+                    </pattern>
+                  </defs>
+                  <rect id="YOJEE_MAIN_LOGO_WHITE_BG_TPT_WIDTH512px" width="197" height="82" fill="url(#pattern)"/>
+                </svg> 
+              </a>   
+            </div>
+            <div  class="col-12 col-sm-3  pb-5 mt-5">
+              <h3>Our Software</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Solving Challenges Ave</li>
+                  <li class="contact"> Features</li>
+                  <li class="contact"> Pricing</li>
+                  <li class="contact"> API</li>
+                  
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>Industry</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Retail</li>
+                  <li class="contact"> Logistics</li>
+                  <li class="contact"> Food</li>
+                  <li class="contact"> Manufacturing</li>
+                  <li class="contact"> Construction</li>
+                  <li class="contact"> All Industries</li>
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>Resources</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Blog</li>
+                  <li class="contact"> Videos</li>
+                  <li class="contact"> Support</li>
+                  <li class="contact"> Developers</li>
+                  <li class="contact"> Case Study</li>
+              </ul>
+            </div>
+
+            <div  class="col-12 col-sm-2  pb-5 mt-5">
+              <h3>About</h3>
+              <ul class="list-unstyled">
+                  <li class="contact"> Company</li>
+                  <li class="contact"> Media</li>
+                  <li class="contact"> In The Press</li>
+                  <li class="contact"> Poscast</li>
+                  <li class="contact"> Investor Relations</li>
+                  <li class="contact"> Careers</li>
+                  <li class="contact"> Contact Us</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="social  ">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 mt-3">
+                <ul class="list-unstyled d-flex">
+                  <li class="pr-5">Copyright 2021 Yojee</li>
+                  <li class="pr-5">Privacy Policy</li>
+                  <li class="pr-5">Term and Conditions</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6  social-icon mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="271.44" height="38.333" viewBox="0 0 271.44 38.333">
+                  <g id="Group_697" data-name="Group 697" transform="translate(-15.161 -9.622)">
+                    <g id="Group_696" data-name="Group 696">
+                      <g id="Group_445" data-name="Group 445" transform="translate(160.991 0.79)">
+                        <path id="Path_3895" data-name="Path 3895" d="M132.888,104.069a5.786,5.786,0,0,0-4.074-4.1c-3.594-.97-18-.97-18-.97s-14.409,0-18,.97a5.786,5.786,0,0,0-4.074,4.1c-.964,3.617-.964,11.164-.964,11.164s0,7.546.964,11.163a5.79,5.79,0,0,0,4.074,4.1c3.594.968,18,.968,18,.968s14.409,0,18-.968a5.79,5.79,0,0,0,4.074-4.1c.964-3.617.964-11.163.964-11.163S133.852,107.686,132.888,104.069Z" transform="translate(-82.021 -86.444)" fill="#fff"/>
+                        <path id="Path_3896" data-name="Path 3896" d="M99.885,118.9V105.2l12.044,6.852Z" transform="translate(-75.809 -83.264)" fill="#a634a5"/>
+                      </g>
+                      <g id="Group_442" data-name="Group 442" transform="translate(15.161 12.747)">
+                        <g id="Group_441" data-name="Group 441">
+                          <rect id="Rectangle_182" data-name="Rectangle 182" width="5.958" height="19.248" transform="translate(0.573 9.625)" fill="#fff"/>
+                          <path id="Path_3900" data-name="Path 3900" d="M54.166,60.627a3.552,3.552,0,1,0-3.523-3.552A3.538,3.538,0,0,0,54.166,60.627Z" transform="translate(-50.643 -53.523)" fill="#fff"/>
+                        </g>
+                        <path id="Path_3901" data-name="Path 3901" d="M63.193,69.229c0-2.706,1.245-4.319,3.631-4.319,2.191,0,3.243,1.548,3.243,4.319v10.1H76V67.146c0-5.156-2.923-7.649-7-7.649a6.713,6.713,0,0,0-5.8,3.18V60.084H57.478V79.333h5.715Z" transform="translate(-47.138 -50.46)" fill="#fff"/>
+                      </g>
+                      <g id="Group_700" data-name="Group 700" transform="translate(248.267 9.622)">
+                        <path id="Path_4218" data-name="Path 4218" d="M330.1,898.564c-2.762,0-5.523.007-8.284,0a10.681,10.681,0,0,1-10.856-10.84q-.02-8.285,0-16.569a10.679,10.679,0,0,1,10.9-10.913q8.228-.016,16.456,0a10.682,10.682,0,0,1,10.97,10.953q.012,8.058,0,16.115c0,6.684-4.564,11.253-11.238,11.256Q334.073,898.566,330.1,898.564Zm.022-4.29c2.911,0,5.822.011,8.733,0a6.236,6.236,0,0,0,6.133-6.141q.019-8.733,0-17.466a6.227,6.227,0,0,0-6.14-6.132q-8.733-.02-17.466,0a6.227,6.227,0,0,0-6.133,6.139q-.019,8.733,0,17.466a6.234,6.234,0,0,0,6.139,6.134C324.3,894.285,327.212,894.274,330.123,894.274Z" transform="translate(-310.951 -860.234)" fill="#fff"/>
+                        <path id="Path_4219" data-name="Path 4219" d="M374.942,915.7a8.5,8.5,0,1,1-8.52-8.487A8.561,8.561,0,0,1,374.942,915.7Zm-4.265.044a4.239,4.239,0,1,0-4.238,4.212A4.149,4.149,0,0,0,370.677,915.743Z" transform="translate(-347.269 -896.548)" fill="#fff"/>
+                        <path id="Path_4220" data-name="Path 4220" d="M432.509,895.347a2.112,2.112,0,0,1-4.223-.069,2.156,2.156,0,0,1,2.206-2.1A2.13,2.13,0,0,1,432.509,895.347Z" transform="translate(-401.651 -885.696)" fill="#fff"/>
+                      </g>
+                    </g>
+                    <path id="Path_3902" data-name="Path 3902" d="M55.038,139.731h7.009v-17.55h4.889l.52-5.876h-5.41v-3.346c0-1.386.278-1.933,1.617-1.933h3.793v-6.1H62.6c-5.215,0-7.566,2.3-7.566,6.693v4.685H51.392v5.95h3.646Z" transform="translate(51.46 -93.541)" fill="#fff"/>
+                  </g>
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+        </div>
           
       </footer>
       
