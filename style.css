@@ -126,6 +126,15 @@ header .right-menu .drop-2 {
   color: #555555;
 }
 
+.featured .item{
+  margin: 25px;
+  transition: transform .2s;
+}
+
+.featured .item:hover{
+  transform: scale(1.5);
+}
+
 .chart {
   padding-top: 30px;
   background-color: #fff7fe;
@@ -225,7 +234,7 @@ select {
   box-sizing: border-box;
 }
 
-.form-register input[type="submit"] {
+.form-register .btn-submit {
   width: 100%;
   background-color: #bb21ab;
   color: white;
