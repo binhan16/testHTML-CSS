@@ -18,6 +18,11 @@ header {
   display: flex;
 }
 
+header nav .logo{
+  width:156px;
+  height:66px;
+}
+
 nav .toggle{
   color: #000000;
   display: none;
@@ -86,13 +91,13 @@ header .right-menu .drop-2 {
 }
 
 @media only screen and (max-width: 600px) {
-  header .logo{
-    top: 0;
-    left:0;
-  }
-header nav .mainMenu {
+  /* header .logo{
+    display:inline-block;
+  } */
+
+  header nav .mainMenu {
   margin-top: 40px;
-  display:none;
+  display: none;
 } 
 
   header nav .mainMenu li a{
@@ -172,6 +177,11 @@ header nav .mainMenu {
   color: #555555;
 }
 
+.swf .row img {
+  width:450px;
+  height: 446px;
+}
+
 .choose {
   list-style: none;
 }
@@ -219,21 +229,29 @@ header nav .mainMenu {
 
 .featured {
   padding-top: 100px;
+  padding-bottom: 20px;
   text-align: center;
+
 }
 .featured p {
   padding-bottom: 10px;
   color: #555555;
 }
 
-.featured .item{
-  margin: 25px;
-  transition: transform .2s;
+.featured .items {
+  text-align: center;
+  justify-content: center;
+}
+
+
+.featured .items img{
+  width:80px;
 }
 
 .featured .item:hover{
   transform: scale(1.5);
 }
+
 
 .chart {
   padding-top: 30px;
@@ -248,17 +266,59 @@ header nav .mainMenu {
   margin-bottom: 20px;
 }
 
+.chart .btn-find{
+  display:none;
+}
+
+.right-chart{
+  margin-left: 80px;
+}
+
+.right-chart .icon-chart{
+  padding: 15px 0;
+}
+
+.right-chart .icon-chart{
+  display:flex;
+  
+}
+
+.right-chart .icon-chart img{
+  width:50px;
+}
+
+.right-chart .icon-chart img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.right-chart .icon-chart p{
+  padding-left: 20px;
+  font-size: 12px;
+  color:#999999;
+  justify-content: left;
+
+}
+
+.right-chart .icon-chart .pink{
+  color: #bb21ab;
+}
+
 .left-chart {
   margin-left: 60px;
 }
 
 .left-chart img {
-  width: 480px;
+  width: 550px;
   height: 370px;
   padding-bottom: 20px;
 }
 
+.left-chart img:hover{
+  transform: scale(1.1);
+}
+
 .left-chart span {
+  margin-left: 40px;
   font-weight: 600;
   font-size: 14px;
 }
@@ -286,10 +346,28 @@ header nav .mainMenu {
     padding-top: 20px;
     margin-left: 20px;
   }
+
+  .chart .btn-find{
+    display:inline-block;
+    width: 100%;
+  background-color: #bb21ab;
+  color: black;
+  font-weight: 600;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
 }
 
 .do-more-with {
-  margin-top: -200px;
+  margin-top: -50px;
+  margin-bottom: 200px;
+}
+.do-more-with img{
+  width:100%;
+  height:1048px;
 }
 
 .domorewith {
@@ -313,6 +391,7 @@ header nav .mainMenu {
 }
 
 @media only screen and (max-width: 600px){
+  .do-more-with 
   .domorewith .amount .btn-amount{
     margin-left: 20%;
   }
@@ -342,14 +421,19 @@ header nav .mainMenu {
 }
 
 .form {
-  margin-top: -360px;
-  z-index: -1;
+  margin-top: -220px;
+  height:900px;
+  background-color: #FFF7FE;
 }
 
-.register {
-  margin-top: -900px;
+.form .image-left{
+  width: 516px;
+  height:516px;
 }
 
+.register{
+  padding-top:150px;
+}
 .register h1 {
   font-weight: 800;
   text-align: center;
@@ -400,11 +484,14 @@ select {
     width: 400px;
   }
 
+  .form-register{
+    z-index: 10;
+    padding-bottom: 200px;
+  }
   
 }
 
 footer {
-  margin-top: 50px;
   width: 100%;
   background-color: #333333;
 }
@@ -424,6 +511,20 @@ footer li {
 footer .social-icon {
   padding-left: 100px;
   line-height: 30px;
+}
+
+.social-icon ul{
+  list-style: none;
+  display:flex;
+}
+
+.social-icon ul li a{
+  margin:0 25px
+}
+
+.social-icon img{
+  width: 25px;
+  height:25px;
 }
 
 @media only screen and (max-width: 600px) {

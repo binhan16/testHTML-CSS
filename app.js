@@ -95,7 +95,8 @@ closeMenu.addEventListener('click',close);
 function show (){
     mainMenu.style.display="inline-block";
     mainMenu.style.top="0";
-    
+    mainMenu.style.backgroundColor="#F6EAF5";
+
 }
 
 function close (){
