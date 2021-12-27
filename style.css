@@ -252,6 +252,12 @@ header .right-menu .drop-2 {
   transform: scale(1.5);
 }
 
+@media only screen and (max-width: 600px){
+  .featured .items img {
+    width:50px;
+  }
+}
+
 
 .chart {
   padding-top: 30px;
@@ -324,6 +330,9 @@ header .right-menu .drop-2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .chart {
+    margin-bottom: 50px;
+  }
   .chart .left-chart span{
     overflow: hidden;
   }
@@ -348,16 +357,29 @@ header .right-menu .drop-2 {
   }
 
   .chart .btn-find{
-    display:inline-block;
-    width: 100%;
+
+    margin:20px 120px 0;
+    display:block;
   background-color: #bb21ab;
-  color: black;
+  color: #fff;
   font-weight: 600;
-  padding: 14px 20px;
-  margin: 25px 0;
+  padding: 15px 60px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
+  }
+
+  .right-chart .icon-chart p{
+    display: none;
+  }
+
+  .right-chart ul{
+    display :flex;
+  }
+
+  .right-chart ul li{
+    padding-left: 5px;
+    margin: 0 10px;
   }
 }
 
@@ -391,19 +413,31 @@ header .right-menu .drop-2 {
 }
 
 @media only screen and (max-width: 600px){
-  .do-more-with 
+  
+  .do-more-with img{
+    height: 970px;
+  }
   .domorewith .amount .btn-amount{
-    margin-left: 20%;
+    width: 90px;
+    height:90px;
+    margin-left:40%;
+    font-size: 14px;
+    
   }
   .domorewith .amount p{
-    color:black;
-    font-size: 20px;
+    margin-right: 10px;
+    color:#fff;
+    font-size: 14px;
     font-weight: 600;
+  }
+
+  .domorewith .amount li{
+    margin-top: -70px;
   }
 }
 
 .btn-amount {
-  width: 250px;
+  width: 350px;
   height: 350px;
   border-radius: 50%;
   border: 5px solid white;
@@ -478,15 +512,20 @@ select {
     padding: 20px 10px;
   }
 
-  .image-left svg{
-    padding-left: -40px;
-    height: 500px;
-    width: 400px;
+  .form{
+    margin-top: -200px;
+  }
+
+  .form .image-left{
+    margin-left: 15%;
+    width:300px;
+    height:300px;
   }
 
   .form-register{
+    width:500px;
     z-index: 10;
-    padding-bottom: 200px;
+    margin-bottom: 100px;
   }
   
 }
@@ -528,6 +567,9 @@ footer .social-icon {
 }
 
 @media only screen and (max-width: 600px) {
+  footer{
+    margin-top:400px;
+  }
   footer ul li,h3{
     padding: 5px 20px;
   }
