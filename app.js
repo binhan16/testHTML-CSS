@@ -84,14 +84,21 @@ form.addEventListener('submit', function(e){
 })
 
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  var y=document.getElementById("right-menu");
-  var z=document.getElementById("left-menu");
-  if (x.style.display === "block" ) {
-    x.style.display = "none";
+// toggle
+const mainMenu =document.querySelector('.mainMenu');
+const closeMenu =document.querySelector('.closeMenu');
+const openMenu =document.querySelector('.openMenu');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show (){
+    mainMenu.style.display="inline-block";
+    mainMenu.style.top="0";
     
-  } else {
-    x.style.display = "block";
-  }
 }
+
+function close (){
+    mainMenu.style.display='none';
+}
+
