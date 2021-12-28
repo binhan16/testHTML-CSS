@@ -88,17 +88,43 @@ form.addEventListener('submit', function(e){
 const mainMenu =document.querySelector('.mainMenu');
 const closeMenu =document.querySelector('.closeMenu');
 const openMenu =document.querySelector('.openMenu');
+const dropMenu =document.querySelector('.dropdown-toggle');
 
 openMenu.addEventListener('click',show);
+dropMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
 function show (){
     mainMenu.style.display="inline-block";
-    mainMenu.style.top="0";
+    mainMenu.style.left="0";
+    mainMenu.style.transition="all .5s"
     mainMenu.style.backgroundColor="#F6EAF5";
+    dropMenu.style.display="block";
 }
 
 function close (){
     mainMenu.style.display='none';
 }
+
+
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// backToTop
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 

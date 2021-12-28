@@ -11,11 +11,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
+/* backToTop */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
 header {
   margin-top: 20px;
   position: relative;
   display: flex;
+}
+
+header nav{
+  position: absolute;
 }
 
 header nav .logo{
@@ -83,6 +107,44 @@ header .right-menu .drop-2 {
   background:linear-gradient(120deg,#FFFFFF ,#F6EAF5)
 }
 
+nav.drop-btn{
+  width:748px;
+}
+
+header nav .wrapper{
+  position: absolute;
+  top:65px;
+  display:flex;
+  background: #fff;
+
+}
+
+header nav .wrapper ul{
+  list-style: none;
+}
+
+header nav .wrapper ul li a{
+  text-decoration: none;
+}
+
+.toggle .ours-drop {
+  display: none;
+}
+
+.toggle .ours-drop li{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #555555;
+}
+
+.toggle .ours-drop a{
+  color: black;
+  text-decoration: none;
+
+}
+
 
 
 @media only screen and (max-width: 1048px) {
@@ -94,7 +156,11 @@ header .right-menu .drop-2 {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
+  .toggle .ours-drop{
+    display:block;
+  }
+
   header .logo{
     display:none;
   }
@@ -159,8 +225,8 @@ header .right-menu .drop-2 {
     padding-right: 30px;
   }
 
-  header nav .mainMenu .dropdown-toggle.active{
-    background-color: #F2AEF7;
+  .dropdown-menu li.show{
+    background-color: #fff;
     transition: all .3s;
     left: -100%;
   }
@@ -229,14 +295,24 @@ header .right-menu .drop-2 {
   header nav .mainMenu .btn-demo{
     padding-top: 20px;
     display:block;
-  background-color: #bb21ab;
-  color: #fff;
-  font-weight: 600;
-  padding: 15px 70px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+    background-color: #bb21ab;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 70px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
   }
+
+  /* .mainMenu .ours-drop::before{
+    left:-100%;
+    transition: all .5s;
+  }
+
+  .mainMenu .ours-drop::after{
+    transform: scaleX(1.5)
+  } */
+
 }
 
 
@@ -284,7 +360,7 @@ header .right-menu .drop-2 {
   border: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   .swf{
     margin-top: -50px;
   }
@@ -333,7 +409,7 @@ header .right-menu .drop-2 {
   transform: scale(1.5);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 748px){
   .featured .items img {
     width:50px;
   }
@@ -410,7 +486,7 @@ header .right-menu .drop-2 {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   .chart {
     margin-bottom: 50px;
   }
@@ -493,7 +569,7 @@ header .right-menu .drop-2 {
   list-style: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 748px){
   
   .do-more-with img{
     height: 970px;
@@ -588,7 +664,7 @@ select {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   .register h1,p{
     padding: 20px 10px;
   }
@@ -648,7 +724,7 @@ footer .social-icon {
   height:25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   footer{
     margin-top:400px;
   }
@@ -669,3 +745,6 @@ footer .social-icon {
     
   }
 }
+
+
+
