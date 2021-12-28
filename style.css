@@ -23,19 +23,18 @@ header nav .logo{
   height:66px;
 }
 
-nav .toggle{
+header nav .logo-toggle{
   color: #000000;
   display: none;
   justify-content: space-between;
+  
   
 }
 
 header nav .openMenu {
   color:black;
+  display:none;
 }
-
-
-
 
 .left-menu {
   padding-left: 80px;
@@ -84,40 +83,88 @@ header .right-menu .drop-2 {
   background:linear-gradient(120deg,#FFFFFF ,#F6EAF5)
 }
 
+
+
 @media only screen and (max-width: 1048px) {
-  header nav .toggle{
-    display: none;
+  
+
+  header .openMenu{
+    display:none;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
-  /* header .logo{
-    display:inline-block;
-  } */
+  header .logo{
+    display:none;
+  }
+
+  header nav .logo-toggle {
+    display: block;
+    justify-content: space-around;
+  }
+
+
+  .logo-toggle img{
+    width:150px;
+    height:100px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  header nav .openMenu{
+    padding-top: 40px;
+    padding-left: 150px;
+  }
+
+  header nav .toggle{
+    background-color: #fff;
+    max-width: 100%;
+    margin: 20px 0;
+    position:fixed;
+    z-index: 10;
+    border-bottom: 1px solid #999999;
+  }
 
   header nav .mainMenu {
-  margin-top: 40px;
+  width:100%;
+  height:100vh;
+  margin-top: 128px;
+  margin-left: -80px;
   display: none;
+  z-index: 1000;
 } 
 
   header nav .mainMenu li a{
+    width:100%;
     display: inline-block;
-    padding-top: 20px;
+    padding: 20px 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
     font-size: 16px;
     font-weight: 600;
+    border-bottom: 1px solid #999999;
   }
 
   header nav .mainMenu li a:hover{
-    background-color: #bb21ab;
-    color: white;
+    background-color: #F2AEF7;
+    color: #ae20ab;
+    width:100%;
   }
 
-  header nav .mainMenu li  i{
-    float: right;
+  header nav .mainMenu li i{
+    margin-top: -50px;
+    float:right;
+    padding-right: 30px;
   }
+
+  header nav .mainMenu .dropdown-toggle.active{
+    background-color: #F2AEF7;
+    transition: all .3s;
+    left: -100%;
+  }
+  
 
   header nav .closeMenu {
     padding-top: 20px;
@@ -159,8 +206,38 @@ header .right-menu .drop-2 {
   header .navbar-nav{
     display:none;
   }
-}
 
+  header nav .mainMenu .bottom-toggle{
+    width:100%;
+    margin-top: 70%;
+    padding-top: 20px;
+    padding-left: 25%;
+    justify-content: center;
+    background-color:#555555
+  }
+
+  header nav .mainMenu .bottom-toggle li{
+    list-style: none;
+    padding-left: 12px;
+  }
+
+  header nav .mainMenu .bottom-toggle a{
+    color: white;
+  }
+
+
+  header nav .mainMenu .btn-demo{
+    padding-top: 20px;
+    display:block;
+  background-color: #bb21ab;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+}
 
 
 .dropdown-menu li a{
@@ -208,6 +285,9 @@ header .right-menu .drop-2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .swf{
+    margin-top: -50px;
+  }
   .swf .text h1,p{
     padding: 20px 20px;
     text-align: center;
@@ -215,9 +295,10 @@ header .right-menu .drop-2 {
 
   .solutions button{
     text-align: center;
-    /* margin-left: 25%; */
     margin: 20px 25% 0;
+  
   }
+  
 
   .solutions .btn-chose2{
     margin-left: 35%;
@@ -392,23 +473,23 @@ header .right-menu .drop-2 {
   height:1048px;
 }
 
-.domorewith {
+.doMoreWith {
   margin-top: -800px;
 }
-.domorewith h1 {
+.doMoreWith h1 {
   text-align: center;
   color: white;
   font-weight: 800;
 }
 
-.domorewith .title {
+.doMoreWith .title {
   text-align: center;
   color: white;
   font-size: 13px;
   font-weight: 400;
 }
 
-.domorewith .amount li {
+.doMoreWith .amount li {
   list-style: none;
 }
 
@@ -417,21 +498,21 @@ header .right-menu .drop-2 {
   .do-more-with img{
     height: 970px;
   }
-  .domorewith .amount .btn-amount{
+  .doMoreWith .amount .btn-amount{
     width: 90px;
     height:90px;
     margin-left:40%;
     font-size: 14px;
     
   }
-  .domorewith .amount p{
+  .doMoreWith .amount p{
     margin-right: 10px;
     color:#fff;
     font-size: 14px;
     font-weight: 600;
   }
 
-  .domorewith .amount li{
+  .doMoreWith .amount li{
     margin-top: -70px;
   }
 }
@@ -514,6 +595,7 @@ select {
 
   .form{
     margin-top: -200px;
+    height:900px;
   }
 
   .form .image-left{
@@ -570,11 +652,20 @@ footer .social-icon {
   footer{
     margin-top:400px;
   }
-  footer ul li,h3{
-    padding: 5px 20px;
+  .social ul li{
+    text-align: center;
   }
 
   footer .social{
     width: 100%;
+  }
+
+  .social-icon ul{
+    float: left;
+  }
+
+  footer .social-icon ul li a img{
+    width: 20px;
+    
   }
 }
