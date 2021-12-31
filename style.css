@@ -441,6 +441,7 @@ header {
   .navigation__link i.fa-chevron-right{
     font-size: 10px;
     line-height:40px;
+    /* float: right; */
   }
 
   .submenu__checkbox {
@@ -465,10 +466,7 @@ header {
     visibility: visible;
     width:100%;
   }
-/* 
-  .navigation__list .active{
-    display:flex;
-  } */
+
   
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
@@ -526,7 +524,7 @@ header {
   }
 
   .bottom-toggle .btn-purple{
-  font-family: "MaaxRoundedTrial", "Arial";
+  font-family:  "Arial";
   font-size: 16px;
   font-weight: bold !important;
   text-transform: uppercase;
@@ -537,6 +535,7 @@ header {
   border: 2px solid #bb21ab;
   text-decoration: none;
   }
+
 
   .bottom-menu{
     margin: 30px 0;
@@ -553,7 +552,6 @@ header {
   .bottom-menu .nav-item .nav-link:hover{
     color:#bb21ab
   }
-
 }
 
 
