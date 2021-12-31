@@ -33,7 +33,7 @@ body {
   background-color: #555;
 }
 
-
+/* Header */
 header {
   width: 100%;
   min-height: 85px;
@@ -45,6 +45,7 @@ header {
   background: white;
 }
 
+/* Navbar */
 .wrapper {
   max-width: 1215px;
   min-height: 85px;
@@ -278,7 +279,7 @@ header {
   display:none;
 }
 
-
+/* Respon Nav */
 @media (max-width: 972px){
   #main-header .wrapper {
     padding: 10px 20px;
@@ -556,7 +557,7 @@ header {
 
 
 
-
+/* See World Flow */
 .swf {
   padding-top: 90px;
 }
@@ -670,6 +671,8 @@ header {
 
 }
 
+/* Feartured */
+
 .featured {
   padding-top: 100px;
   padding-bottom: 20px;
@@ -702,6 +705,7 @@ header {
 }
 
 
+/* Chart */
 .chart {
   padding-top: 30px;
   background-color: #fff7fe;
@@ -774,7 +778,7 @@ header {
   font-weight: 600;
   font-size: 14px;
 }
-
+/* Responsive Chart */
 @media only screen and (max-width: 748px) {
   .chart {
     margin-bottom: 50px;
@@ -829,6 +833,8 @@ header {
   }
 }
 
+
+/* Do More With */
 .do-more-with {
   margin-top: -50px;
   margin-bottom: 200px;
@@ -902,6 +908,8 @@ header {
   font-size: 18px;
   color: white;
 }
+
+/* Form Register */
 
 .form {
   position: relative;
@@ -993,7 +1001,7 @@ select {
   border: none;
 
 }
-
+/* Responsive Form Register */
 @media only screen and (max-width: 748px) {
   
   .register{
@@ -1047,6 +1055,8 @@ select {
   }
   
 }
+
+/* Footer */
 
 footer {
   width: 100%;
