@@ -28,7 +28,7 @@ function checkEmptyError(listInput){
 
         if(!input.value){
             isEmptyError = true;
-            showError(input,'Không được để trống')
+            showError(input,'Không được để trống !')
         }else{
             showSuccess(input)
         }
@@ -45,7 +45,7 @@ function checkEmailError(input){
     if(regexEmail.test(input.value)){
         showSuccess()
     }else{
-        showError(input,'Email Invalid')
+        showError(input,'Email không đúng định dạng !')
     }
 
     return isEmailError
@@ -56,12 +56,12 @@ function checkLengthError(input, min, max){
     input.value =  input.value.trim()
 
     if(input.value.length < min){
-        showError(input,`Phải có ít nhất ${min} ký tự`)
+        showError(input,`Phải có ít nhất ${min} ký tự !`)
         return true
     }
 
     if(input.value.length > max){
-        showError(input,`Không được quá ${max} ký tự`)
+        showError(input,`Không được quá ${max} ký tự !`)
         return true
     }
 
@@ -120,11 +120,25 @@ function scrollFunction() {
   }
 }
 
+
+
 // backToTop
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
+// toggle fix
+const openToggle =document.querySelector('.icon-open');
+const closeToggle = document.querySelector('.icon-close');
+
+openToggle.addEventListener('click',show);
+closeToggle.addEventListener('.click',close);
+
+
+function toggled(){
+    openToggle.style.display="none";
+    closeToggle.style.display="block";
+}
 
 
