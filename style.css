@@ -687,15 +687,18 @@ header {
 .featured .items {
   text-align: center;
   justify-content: center;
+
 }
 
 
 .featured .items img{
   width:80px;
+  filter: grayscale(100%);
 }
 
-.featured .item:hover{
+.featured .item img:hover{
   transform: scale(1.5);
+  filter: grayscale(0);
 }
 
 @media only screen and (max-width: 748px){
@@ -913,7 +916,7 @@ header {
 
 .form {
   position: relative;
-  margin-top: -220px;
+  margin-top: -60px;
   height:auto;
   background-color: #FFF7FE;
 }
