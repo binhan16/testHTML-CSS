@@ -84,29 +84,32 @@ form.addEventListener('submit', function(e){
 })
 
 
-// toggle
-const mainMenu =document.querySelector('.mainMenu');
-const closeMenu =document.querySelector('.closeMenu');
-const openMenu =document.querySelector('.openMenu');
-const dropMenu =document.querySelector('.dropdown-toggle');
+// // toggle
+// const mainMenu =document.querySelector('.mainMenu');
+// const closeMenu =document.querySelector('.closeMenu');
+// const openMenu =document.querySelector('.openMenu');
+// const dropMenu =document.querySelector('.dropdown-toggle');
 
-openMenu.addEventListener('click',show);
-dropMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
+// openMenu.addEventListener('click',show);
+// dropMenu.addEventListener('click',show);
+// closeMenu.addEventListener('click',close);
 
-function show (){
-    mainMenu.style.display="inline-block";
-    mainMenu.style.left="0";
-    mainMenu.style.transition="all .5s"
-    mainMenu.style.backgroundColor="#F6EAF5";
-    dropMenu.style.display="block";
-}
+// function show (){
+//     mainMenu.style.display="inline-block";
+//     mainMenu.style.left="0";
+//     mainMenu.style.transition="all .5s"
+//     mainMenu.style.backgroundColor="#F6EAF5";
+//     dropMenu.style.display="block";
+// }
 
-function close (){
-    mainMenu.style.display='none';
-}
+// function close (){
+//     mainMenu.style.display='none';
+// }
 
 
+
+
+// backToTop
 var mybutton = document.getElementById("myBtn");
 
 
@@ -120,25 +123,13 @@ function scrollFunction() {
   }
 }
 
-
-
-// backToTop
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-// toggle fix
-const openToggle =document.querySelector('.icon-open');
-const closeToggle = document.querySelector('.icon-close');
-
-openToggle.addEventListener('click',show);
-closeToggle.addEventListener('.click',close);
 
 
-function toggled(){
-    openToggle.style.display="none";
-    closeToggle.style.display="block";
-}
+
 
 
