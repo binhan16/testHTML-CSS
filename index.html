@@ -25,6 +25,60 @@
       <ion-icon name="chevron-up-outline"></ion-icon>
     </button>
       <!-- Header Start -->
+      <!-- 
+        1. Missing active state for menu item
+
+        2. Large screen : left menu not same line right menu
+           => add Bootstrap class align-items-center for #collapsibleNavbar & .right-menu
+              add class mb-0 for .right-menu
+
+        3. Small screen : menu item not hidden when menu's closed
+           => #primary-menu, #right-menu : add class "d-none d-md-block"
+
+        4. Small screen : menu inside .navigation__list not full screen
+           => add class vh-100 next to navigation__list + edit css
+              (remove top, left, transform, edit margin-top) 
+
+        5. Small screen : .bottom-toggle should be position absolute & bottom 0
+           not add margin-top for it, not work correctly
+           position absolute, lef=right=0, margin 0 auto, text-align center
+
+        6. Small screen : menu-item align left
+
+        7. Small screen : set padding left/right for menu-item
+
+        8. Small screen : set link for text, span for chevro-right icon
+           2 separate tag, i.fas.fa-chevron-right not inside <a>
+           (for click to show submenu, change color i to black to see it)
+
+           !!! IMPORTANT : <a> can't be inside another <a>
+
+        9. if using input to show hide something, remember 2 issues :
+           1. add controller inside label
+              Ex : 
+                <input id="chb-1" type="checkbox" />
+                <label for="chb-1">
+                  <i class="fas fa-chevron-right"></i>
+                </label>
+           2. each input has it own id (different id)
+              Ex : 
+                <input id="chb-1" type="checkbox" />
+                <label for="chb-1">
+                  <i class="fas fa-chevron-right"></i>
+                </label>
+                
+                <input id="chb-2" type="checkbox" />
+                <label for="chb-2">
+                  <i class="fas fa-chevron-left"></i>
+                </label>
+
+        10. Small screen : menu level 1 & level 2 has some same style
+            => should have 1 class contain these same styles
+
+            !!! IMPORTANT : try to have as least custom class as possible
+                            CSS affect performance of loading site too
+
+       -->
       <header id="header">
         <div id="main-header">
           <div class="wrapper">           
@@ -234,18 +288,21 @@
 
             <!-- Toggle -->
             <div class="toggle">
-              <input type="checkbox" class="navigation__checkbox" id="toggle">
-              <label for="toggle" class="navigation__button">
+              <input type="checkbox" class="navigation__checkbox" id="lv1-toggler">
+              <label for="lv1-toggler" class="navigation__button">
                 <span class="navigation__icon"></span>
               </label>
 
               <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="active">
-                      <a href="#" class="navigation__link"> 
+                      <a href="#" class="navigation__link d-inline-block"> 
                         Our Software
-                      <i class="fas fa-chevron-right"></i>
-                      <input type="checkbox" class="submenu__checkbox" id="toggle">
+                      </a>
+                      <input type="checkbox" class="submenu__checkbox" id="lv2-item1-toggler">
+                      <label for="lv2-item1-toggler">
+                        <i class="fas fa-chevron-right ml-5 text-dark"></i>
+                      </label>
                       
                       <!-- Sub-menu  -->
                       <ul class="sub-menu">
@@ -266,13 +323,10 @@
                           API
                           <i class="fas fa-chevron-right"></i>
                           </a></li>
-                    </ul>
-                    </a>
-                    
-                      </li>
-                    
-                    
+                      </ul>
 
+                    </li>
+                    
                       <li><a href="#" class="navigation__link">
                       Industry
                         <i class="fas fa-chevron-right"></i>

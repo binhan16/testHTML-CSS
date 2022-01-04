@@ -466,6 +466,8 @@ header {
     opacity:1;
     visibility: visible;
     width:100%;
+    display: flex;
+    background: #fff;
   }
 
   
