@@ -84,29 +84,6 @@ form.addEventListener('submit', function(e){
 })
 
 
-// // toggle
-// const mainMenu =document.querySelector('.mainMenu');
-// const closeMenu =document.querySelector('.closeMenu');
-// const openMenu =document.querySelector('.openMenu');
-// const dropMenu =document.querySelector('.dropdown-toggle');
-
-// openMenu.addEventListener('click',show);
-// dropMenu.addEventListener('click',show);
-// closeMenu.addEventListener('click',close);
-
-// function show (){
-//     mainMenu.style.display="inline-block";
-//     mainMenu.style.left="0";
-//     mainMenu.style.transition="all .5s"
-//     mainMenu.style.backgroundColor="#F6EAF5";
-//     dropMenu.style.display="block";
-// }
-
-// function close (){
-//     mainMenu.style.display='none';
-// }
-
-
 
 
 // backToTop
@@ -127,6 +104,64 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// hover - show menu-2
+
+$('#menu > li').hover(function() {
+       
+    $('.dropdown_menu', this).slideDown();
+  },function() {
+   
+    $('.dropdown_menu', this).slideUp();
+  });
+
+  $('.dropdown_menu > li').hover(function() {
+    
+    $('.submenu', this).slideDown();
+  },function() {
+    
+    $('.submenu', this).slideUp();
+  });
+
+
+  // toggle
+
+  const drop_btn = document.querySelector(".drop-btn i");
+  const show_menu = document.querySelector(".show-menu");
+         const menu_bar = document.querySelector(".menu-bar");
+         const ours_drop = document.querySelector(".ours-drop");
+         const industry_drop = document.querySelector(".industry-drop");
+         const ours_item = document.querySelector(".ours-item");
+         const industry_item = document.querySelector(".industry-item");
+         const ours_btn = document.querySelector(".back-ours-btn");
+         const industry_btn = document.querySelector(".back-industry-btn");
+           drop_btn.onclick = (()=>{
+             show_menu.classList.toggle("show");
+
+           });
+
+           
+           ours_item.onclick = (()=>{
+             menu_bar.style.marginLeft = "-500px";
+             setTimeout(()=>{
+              ours_drop.style.display = "block";
+             }, 100);
+           });
+           industry_item.onclick = (()=>{
+             menu_bar.style.marginLeft = "-500px";
+             setTimeout(()=>{
+               industry_drop.style.display = "block";
+             }, 100);
+           });
+           ours_btn.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             ours_drop.style.display = "none";
+           });
+           industry_btn.onclick = (()=>{
+             industry_drop.style.display = "none";
+             menu_bar.style.marginLeft = "0px";
+           });
 
 
 

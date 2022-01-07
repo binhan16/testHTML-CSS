@@ -24,191 +24,197 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <ion-icon name="chevron-up-outline"></ion-icon>
     </button>
+
       <!-- Header Start -->
       <header id="header">
         <div id="main-header">
           <div class="wrapper">  
             <!-- Navbar -->
-            <div class="navigation">
+            <div class="navigation ">
               <nav class="navbar navbar-expand-sm navbar-light">
-                <div class="logo">
-                  <a href="#"><img src="./image/Logo.png" alt=""></a>
-                </div>
-                <div id="collapsibleNavbar"
-                 class="main-header-bar-navigation collapse navbar-collapse">
-                  <ul id="primary-menu" class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link ours" href="#">
-                        <i class=" fas fa-chevron-left"></i>
-                        <span>OurSoftware</span>
-                        <i class="fas fa-chevron-right"></i>
-                      </a>
-
-                      
-
-                       <!-- sub-menu -->
-                      <ul class="sub-menu">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-2 logo">
+                      <a href="#"><img src="./image/Logo.png" alt=""></a>
+                    </div>
+                    <div id="collapsibleNavbar"
+                     class="col-sm-10 main-header-bar-navigation align-items-center collapse navbar-collapse">
+                      <ul id="primary-menu" class="col-sm-6 navbar-nav dropdown">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link ours" href="#">
                             <i class="fas fa-chevron-left"></i>
-                            <span>Solving Challenges</span>
+                            <span>OurSoftware</span>
                             <i class="fas fa-chevron-right"></i>
                           </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            <i class="fas fa-chevron-left"></i>
-                            <span>Features</span>
-                            <i class="fas fa-chevron-right"></i>
-                          </a>
-                          
-                            <ul class="sub-menu side-menu ">
-                              <a class="main-menu" href="#">View all
-                                <i class="fas fa-angle-double-right"></i>
-                                <br>
-                                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                          <!-- sub-menu FIX -->
+                          <ul class="dropdown_menu">
+                            <li >
+                              <a href="#" >Solving Challenges
+                                <i class="fas fa-chevron-right"></i>
                               </a>
-                              
-                                <li  class=" nav-item ">
-                                  <a class="nav-link" href="#">
-                                    <span>Order Management</span>
-                                  </a>
+                            </li>
+                            <li >
+                              <ul class="submenu">
+                                <a class="main-menu" href="#">View all
+                                  <i class="fas fa-angle-double-right"></i>
+                                  <br>
+                                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                                </a>
+                                <li >
+                                  <a href="#" >Order Management</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Delivery Route Planning</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Delivery Route Optimization</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Fleet Delivery Tracking</a>
+                                </li>
+                                <li >
+                                  <a href="#" >Automated Customer Update</a>
                                 </li>
                                 
-                                <li  class=" nav-item ">
-                                  <a class="nav-link" href="#">
-                                    <span>Delivery Route Planning</span>
-                                  </a>
-                                </li>
-  
-                                
-                                <li  class=" nav-item ">
-                                  <a class="nav-link" href="#">
-                                    <span>Delivery Route Optimization</span>
-                                  </a>
-                                </li>
-  
-                                <li  class=" nav-item ">
-                                  <a class="nav-link" href="#">
-                                    <span>Fleet Delivery Tracking</span>
-                                  </a>
-                                </li>
-  
-                                
-                                <li  class=" nav-item ">
-                                  <a class="nav-link" href="#">
-                                    <span>Automated Customer Update</span>
-                                  </a>
-                                </li>
-                            </ul>
-                          
-                          
+                              </ul>
 
-                          <!-- <ul class="sub-menu2">
-                            <li  class=" nav-item ">
-                              <a class="nav-link" href="#">
-                                <span>Delivery Driver App</span>
+                              <a href="#" >
+                                Features
+                                <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
+                            <li >
+                              <a href="#" >Pricing</a>
+                            </li>
+                            <li >
+                              <a href="#" >API</a>
+                            </li>
+                          </ul>
 
-                            
-                            <li  class=" nav-item ">
+                           <!-- sub-menu -->
+                          <!-- <ul class="sub-menu">
+                            <li class="nav-item menu-level-1">
                               <a class="nav-link" href="#">
-                                <span>Electronic Proof of Deliveryt</span>
+                                <i class="fas fa-chevron-left"></i>
+                                <span>Solving Challenges</span>
+                                <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
-
-                            
-                            <li  class=" nav-item ">
+                            <li class="nav-item menu-level-1 dropdown">
                               <a class="nav-link" href="#">
-                                <span>Rating & Cost Calculations</span>
+                                <i class="fas fa-chevron-left"></i>
+                                <span>Features</span>
+                                <i class="fas fa-chevron-right"></i>
+                              </a>
+                                <ul class="sub-menu side-menu d-none">
+                                  <a class="main-menu" href="#">View all
+                                    <i class="fas fa-angle-double-right"></i>
+                                    <br>
+                                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                                  </a>
+                                  
+                                    <li  class=" nav-item menu-level-2">
+                                      <a class="nav-link" href="#">
+                                        <span>Order Management</span>
+                                      </a>
+                                    </li>
+                                    
+                                    <li  class=" nav-item menu-level-2">
+                                      <a class="nav-link" href="#">
+                                        <span>Delivery Route Planning</span>
+                                      </a>
+                                    </li>
+      
+                                    
+                                    <li  class=" nav-item menu-level-2">
+                                      <a class="nav-link" href="#">
+                                        <span>Delivery Route Optimization</span>
+                                      </a>
+                                    </li>
+      
+                                    <li  class=" nav-item menu-level-2">
+                                      <a class="nav-link" href="#">
+                                        <span>Fleet Delivery Tracking</span>
+                                      </a>
+                                    </li>
+      
+                                    
+                                    <li  class=" nav-item menu-level-2">
+                                      <a class="nav-link" href="#">
+                                        <span>Automated Customer Update</span>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item menu-level-1">
+                              <a class="nav-link" href="#">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>Pricing</span>
+                                <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
-
-                            
-                            <li  class=" nav-item ">
+                            <li class="nav-item menu-level-1">
                               <a class="nav-link" href="#">
-                                <span>Partner Management</span>
-                              </a>
-                            </li>
-
-                            
-                            <li  class=" nav-item ">
-                              <a class="nav-link" href="#">
-                                <span>Reporting and Insights</span>
+                                <i class="fas fa-chevron-left"></i>
+                                <span>API</span>
+                                <i class="fas fa-chevron-right"></i>
                               </a>
                             </li>
                           </ul> -->
                         </li>
-
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link " href="#">
                             <i class="fas fa-chevron-left"></i>
-                            <span>Pricing</span>
+                            <span>Industry</span>
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Resources</span>
                             <i class="fas fa-chevron-right"></i>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link " href="#">
                             <i class="fas fa-chevron-left"></i>
-                            <span>API</span>
+                            <span>About</span>
                             <i class="fas fa-chevron-right"></i>
                           </a>
                         </li>
                       </ul>
+    
+                      <!-- right menu -->
+                      <ul class="right-menu col-sm-4 " >
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">
+                            <span>Contact</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">
+                            <span>SendSG</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="btn-purple">
+                            DEMO
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-                      
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        <i class="fas fa-chevron-left"></i>
-                        <span>Industry</span>
-                        <i class="fas fa-chevron-right"></i>
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        <i class="fas fa-chevron-left"></i>
-                        <span>Resources</span>
-                        <i class="fas fa-chevron-right"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        <i class="fas fa-chevron-left"></i>
-                        <span>About</span>
-                        <i class="fas fa-chevron-right"></i>
-                      </a>
-                    </li>
-                  </ul>
-
-                  <ul class="right-menu" >
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        <span>Contact</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        <span>SendSG</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="btn-purple">
-                        DEMO
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div >
+                
                 </div>
               </nav>
             </div>
 
             <!-- Toggle -->
-            <div class="toggle">
+            <!-- <div class="toggle container ">
               <input type="checkbox" class="navigation__checkbox" id="toggle">
               <label for="toggle" class="navigation__button">
                 <span class="navigation__icon"></span>
@@ -217,25 +223,15 @@
               <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="active">
-<<<<<<< HEAD
-                      
-                      <a href="#" class="navigation__link our-dropdown "> 
-                        
-                      </a>
                       <input type="checkbox" class="submenu__checkbox" id="toggle">
-                        Our Software
-                        <i class="fas fa-chevron-right"></i>
-                       <!-- Sub-menu -->
-=======
-                      <input type="checkbox" class="submenu__checkbox" id="toggle">
-                      <a href="#" class="navigation__link our-dropdown "> 
+                    
+                      <a href="#" class="navigation__link our-dropdown  "> 
                         Our Software
                         <i class="fas fa-chevron-right"></i>
                       </a>
                       
-                       <!-- Sub-menu  -->
->>>>>>> eea6862c40a7cabbbdb6d96a06930940064e9c28
-                      <ul class="sub-toggle-menu active">
+                       
+                      <ul class="sub-toggle-menu">
                         <li><a href="#" class="navigation__link"> 
                           Solving Challenges
                           <i class="fas fa-chevron-right"></i>
@@ -296,14 +292,166 @@
 
                 
             </nav>
-            </div>
+            </div> -->
+            <div class="toggle-fix">
+              <div class="drop-btn ">
+                 <a href="#">
+                  <img src="./image/Logo.png" alt="">
+                 </a> 
+                 <i class="fas fa-bars"></i>
+                 
+              </div>
+
+              <div class="show-menu ">
+                 <ul class="menu-bar" >
+                    <li class="ours-item">
+                       <a href="#">
+                          
+                         Our Software <i class="fas fa-angle-right"></i>
+                       </a>
+                    </li>
+                    <li class="industry-item">
+                       <a href="#">
+                          
+                         Industry <i class="fas fa-angle-right"></i>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                          
+                         Resources 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                          
+                         About 
+                       </a>
+                    </li>
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+                 <!-- Our Software Menu-items -->
+                 <ul class="ours-drop">
+                    <li class="arrow back-ours-btn">
+                      <i class="fas fa-angle-left"></i>
+                        Our Software
+                      
+                    </li>
+                    <li>
+                       <a href="#">
+                         Solving Challenges 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Features 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Pricing 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         API 
+                       </a>
+                    </li>
+     
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+                 <!-- Industry Menu-items -->
+                 <ul class="industry-drop">
+                    <li class="arrow back-industry-btn">
+                      <i class="fas fa-angle-left"></i>
+                        Industry
+                    </li>
+                    <li>
+                       <a href="#">
+                         Solving Challenges 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Features 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         Pricing 
+                       </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                         API 
+                       </a>
+                    </li>
+     
+                    <!-- bottom menu -->
+                   <div class="bottom-toggle">
+                     <a href="#" class="btn-purple">
+                       BOOK A DEMO
+                     </a>
+                     <ul class="bottom-menu">
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>Contact</span>
+                         </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link " href="#">
+                           <span>SendSG</span>
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                 </ul>
+              </div>
+     
+              
+           </div>
+          
           </div>
         </div>
       </header>
       <!-- Header End -->
       
       <!-- See world flow Start -->
-      <div class="swf container d-flex">
+      <section class="swf container">
         <div class="row">
           <div class="content col-12 col-sm-7 ">
             <div class="text ">
@@ -338,11 +486,11 @@
             <image src="./image/Business logistics.png"> 
         </div>
         </div>
-      </div>
+      </section>
       <!-- See world flow End -->
 
       <!-- Feartured Start -->
-    <div class="featured container">
+      <section class="featured container" >
         <p >Featured In</p>
 
         <div class="items row text-align-center">
@@ -363,74 +511,79 @@
           </a>
           
         </div>                  
-    </div>
+      </section>
       <!-- Feartured End -->
 
       <!-- Chart Start -->
       <section class="chart">
         <p>Automate your operations with 
             <br> delivery management software</p>
-       <div class="container d-flex">
+       <div class="container">
          <div class="row">
-          <div class="left-chart col-sm-6 col-12">
+          <div class="left-chart col-sm-7 col-12" >
             <img src="./image/chart.png" alt="chart">
             <br>
-            <span>Get real-time ETA based on the drivers location while keeping <br> your customers informed and dramatically reduces customer </span>
+            <p>Get real-time ETA based on the drivers location while keeping  your customers informed and dramatically reduces customer </p>
         </div> 
-        <div class="right-chart col-sm-3 col-12">           
-         <ul>
-           <li>
-             <div class="icon-chart ">
-               <image src="./image/Group 510.png"/>
-               
-               <p >Route Planning and Route Optimisation</p>
-             </div>
-           </li>
-
-           <li>
-            <div class="icon-chart">
-              <image src="./image/Path 3968.png"/>
-              
-              <p class="pink">Live Tracking</p>
+        <div class="right-chart col-sm-5 col-12">    
+          <div class="item ">
+            <div class="text">
+              <div class="icon-chart">
+                <image src="./image/Group 510.png"/>
+              </div>
+              <div class="content">
+                <p >Route Planning and Route Optimisation</p>
+              </div>
             </div>
-          </li>
+          </div>
 
-          <li>
-            <div class="icon-chart ">
-              <image src="./image/Group 509.png"/>
-
-              <p >Driver App</p>
+            <div class="item ">
+              <div class="text">
+                <div class="icon-chart">
+                  <image src="./image/Path 3968.png"/>
+                </div>
+                <div class="content">
+                  <p >Live Tracking</p>
+                </div>
+              </div>
             </div>
-          </li>
 
-          <li>
-            <div class="icon-chart">
-              <image src="./image/Group 514.png"/>
-              
-              <p class="pink">Manage your partners/vendors</p>
-            </div>
-          </li>
+              <div class="item ">
+                <div class="text">
+                  <div class="icon-chart">
+                    <image src="./image/Group 509.png"/>
+                  </div>
+                  <div class="content">
+                    <p >Driver App</p>
+                  </div>
+                </div>
+              </div>
 
-          <li>
-            <div class="icon-chart">
-              <image src="./image/Consulting.png"/>
-              
-              <p>Easy-to-use API</p>
-            </div>
-          </li>
+              <div class="item ">
+                  <div class="text">
+                    <div class="icon-chart">
+                      <image src="./image/Group 514.png"/>
+                    </div>
+                    <div class="content">
+                      <p >Manage your partners/vendors</p>
+                    </div>
+                  </div>
+              </div>
 
-          <li>
-            <div class="icon-chart">
-              <image src="./image/Movies.png"/>
-              <p>Analytics and Reporting</p>
-            </div>
-          </li>
-         </ul>
-
+              <div class="item ">
+                <div class="text">
+                    <div class="icon-chart">
+                      <image src="./image/Consulting.png"/>
+                    </div>
+                    <div class="content">
+                      <p>Easy-to-use API</p>
+                    </div>
+                </div>
+              </div>
+          </div>
         </div>  
-         </div>
-         
-       </div>
+        </div>
+       
        <br>
          <button class="btn-find">FIND OUT MORE</button>
       </section>
@@ -439,7 +592,8 @@
       
       <!-- DoMoreWith Start -->
       <section class="do-more-with" >
-        <image src="./image/Path 4221.png"/>
+        <!-- <image src="./image/Path 4221.png"/> -->
+        <div class="top-background"></div>
         <div class="doMoreWith">
             <h1>Do more with Yojee</h1>
             <p class="title">An enterprise-grade solution for companies of any size</p>
@@ -461,7 +615,8 @@
             </ul>
             </div>
             </div>     
-        </div>     
+        </div>  
+        <div class="bottom-background"></div>   
       </section>
       <!-- DoMoreWith End -->
 
@@ -472,60 +627,61 @@
             <p>See for yourself just how much money and time Yojee will save you and your team</p>
           <div class="container d-flex mt-2" >
               <div class="row">
-                <div class=" col-12 col-sm-6 ">
+                <div class=" col-12 col-sm-6" style="margin: 70px">
                   <image class="image-left" src="./image/Freight quote request.png">
                 </div>
-                <div class="col-12 col-sm-3 form-register ml-auto ">
+                <div class="col-12 col-sm-3 form-register" style="padding:0 50px">
                   <form >
                     <div class="form-input">
                       <p >First Name</p>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <small></small>
-                    <span></span>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <small></small>
+                      <span></span>
                     </div>
                 <br>
                     
                     <div class="form-input">
                       <p >Last Name</p>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <small></small>
-                    <span></span>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <small></small>
+                      <span></span>
                     </div>
                 <br>
                     <div class="form-input">
                       <p >Contact Number</p>
-                    <input type="number" id="cnumber" name="contactnumber" placeholder="Your contact number..">
-                    <small></small>
-                    <span></span>
+                      <input type="number" id="cnumber" name="contactnumber" placeholder="Your contact number..">
+                      <small></small>
+                      <span></span>
                     </div>
                 <br>
                     <div class="form-input">
                       <p >Company</p>
-                    <input type="text" id="company" name="company" placeholder="Your company..">
-                    <small></small>
-                    <span></span>
+                      <input type="text" id="company" name="company" placeholder="Your company..">
+                      <small></small>
+                      <span></span>
                     </div>
                 <br>
                     <div class="form-input">
                       <p >Email</p>
-                    <input type="email" id="email" name="email" placeholder="Your email..">
-                    <small></small>
-                    <span></span>
+                      <input type="email" id="email" name="email" placeholder="Your email..">
+                      <small></small>
+                      <span></span>
                     </div>
                 <br>
                    
                     <div class="form-input">
                       <p for="country">Country</p>
                     <br>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                    </select>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
                     </div>
                   
                     <button type="submit" class="btn-submit">BOOK DEMO</button>
                   </form>
+                  
                 </div>
               </div>
              
@@ -598,31 +754,31 @@
         <div class="social  ">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-sm-6 mt-3">
+              <div class="col-12 col-sm-8 mt-3">
                 <ul class="list-unstyled d-flex">
-                  <li class="pr-4">Copyright 2021 Yojee</li>
-                  <li class="pr-4">Privacy Policy</li>
-                  <li class="pr-4">Term and Conditions</li>
+                  <li class="pr-5">Copyright 2021 Yojee</li>
+                  <li class="pr-5">Privacy Policy</li>
+                  <li class="pr-5">Term and Conditions</li>
                 </ul>
               </div>
-              <div class="col-12 col-sm-6  social-icon mt-3">
+              <div class="col-12 col-sm-4  social-icon mt-3">
                 <ul>
-                  <li>
+                  <li class="pr-2">
                     <a href="#">
                       <image src="./image/Group 442.png"/>
                     </a>
                   </li>
-                  <li>
+                  <li class="pr-2">
                     <a href="#">
                       <image src="./image/Path 3902.png"/>
                     </a>
                   </li>
-                  <li>
+                  <li class="pr-2">
                     <a href="#">
                       <image src="./image/Group 445.png"/>
                     </a>
                   </li>
-                  <li>
+                  <li class="pr-2">
                     <a href="#">
                       <image src="./image/Group 700.png"/>
                     </a>
@@ -643,7 +799,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+
     <script src="./app.js"></script>
 
     <!-- icon -->
